@@ -1,0 +1,46 @@
+#Main-Content{
+	width: 100%;
+	max-width: 1024px;
+	min-width: 800px;
+	border: 1px dotted blue;
+	margin: 0 auto;
+}
+
+
+
+
+/* Form Design */
+
+#info-section{
+	background-color: #fff;
+	padding: 15px;
+	border: 2px solid orange;
+	position: relative;
+}
+
+#inputs{
+	margin: 0 auto;
+	padding: 5px;
+	width: 75%;
+}
+.input_detail{
+	padding: 5px;
+	margin: 0 auto;
+	transition: 2s;
+	border: 1px solid transparent;
+}
+.input_detail:hover{
+	transition: 2s;
+	border: 1px solid blue;
+}
+#submit{
+	border-radius: 7px;
+	border: 0 solid black;
+	background-color: red;
+	float: right;
+}
+/* Form result */
+#submition-report{
+	padding: 5px;
+	border: 1px solid black;
+}

@@ -1,0 +1,54 @@
+body{
+
+}
+#Table{
+	border: none;
+}
+#periodic_elements{
+	width: 49%;;
+	padding: 5px;
+	position: relative;
+	clear: both;
+}
+.Box{
+	border: 1px solid black;
+	text-align: center;
+	font-size: 15px;
+	transition: 2s;
+}
+.Box:Hover{
+	transition: 2s;
+	/*filter: blur(1px);*/
+	transform: rotate(20deg);
+	cursor:pointer;
+}
+.Box p, h4{
+	margin: 1px;
+}
+#return-periodic-query{
+	margin: 0 auto;
+}
+.batter{
+	width: 98%;
+	margin: 3px;
+	padding: 4px;
+	background-color: #fff;
+	border: 2px solid orange;
+	text-align: left;
+	display: inline-block;
+}
+.title_sect{
+	
+	border: 1px dotted red;
+	width: 49%;
+	float: left;
+	transition: 2s;
+}
+.title_sect:hover{
+	transition: 1s;
+}
+.description{
+	width: 49%;
+	float: right;
+	background-color: lightgreen;
+}

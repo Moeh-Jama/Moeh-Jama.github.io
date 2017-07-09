@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Jamastry</title>
+		<link rel="stylesheet" type="text/css" href="styles/jamastry.css">
+		<script type="text/javascript" src="styles/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/periodic.css">
+	</head>
+	<body onload="begin_script()">
+		<div id="Main-Content">
+			<div id="Header">
+				<div id="Header-top">
+
+				</div>
+				<div id="Header-content">
+
+				</div>
+			</div>
+			<div id="Content">
+				<div id="col-a">
+
+				</div>
+				<div id="Main-col">
+					<div id="info-section">
+						<form>
+							<!-- Add a Validator to test whether there is an input -->
+							<div id="inputs">
+								<input type = "text" class="input_detail" id="f_element" placeholder="Enter an Element here...">
+								<br><input type = "text" class="input_detail" id="l_element" placeholder="Enter an Element here...">
+							</div>
+							<br>
+							
+						</form>
+						<button id="submit" onclick="begin_calculation()">Enter</button>
+						<!--Here in submition-report user will recieve calculations. -->
+						<div id="submition-report"></div>
+					</div>
+					<div id="periodic-section">
+					<script type="text/javascript" src="periodic_javascript.js"></script>
+						<div id="periodic_table"></div>
+						<div id="return-periodic-query"></div>
+					</div>
+				</div>
+				<div id="col-b">
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

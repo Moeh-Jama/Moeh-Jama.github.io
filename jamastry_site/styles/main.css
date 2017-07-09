@@ -1,0 +1,55 @@
+body{
+	background-color: lightblue;
+}
+#Main-Wrapper{
+	width: 95%;
+	border: 2px dotted black;
+	margin: 0 auto;
+}
+#Header h1{
+	text-align: center;
+}
+/*----Form CSS ----*/
+#Form{
+	background-image: url("../Images/mol.jpg");
+	padding: 5px;
+	border: 1px dotted black;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #f48c42;
+	margin: 0 auto;
+}
+#inner-form{
+	color: black;
+	opacity: 0.5;
+	background-color: lightblue;
+}
+#inner-form:Hover{
+	opacity: 1;
+	background: rgba(66, 134, 244, 0.7);
+	transition: 0.5s;
+}
+#add_two{
+	margin-top: 0;
+	background-color: rgba(0,0,38,0.7);
+	text-align: center;
+	line-height: 35px;
+}
+#myTable{
+
+}
+#close-btn:active{
+	display: none;
+}
+.even{
+	background-color: #ff9932;
+}
+.even:hover{
+	background-color: #ffc184;
+}
+.odd{
+	background-color: #00ff80;
+}
+.odd:hover{
+
+}
