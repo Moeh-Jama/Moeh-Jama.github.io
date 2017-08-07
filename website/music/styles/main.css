@@ -1,0 +1,60 @@
+
+#MainContent{
+	width: 98%;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+#Header{
+	background-color: #000080;
+	padding: 1px;
+}
+.navbar-nav ul{
+	margin: 8px;
+	text-align: center;
+}
+.navbar-nav ul li{
+	display: inline;
+	font-size: 1.1em;
+	padding: 2px;
+	
+}
+.links{
+	color: #fff;
+	padding: 3px;
+}
+.links:hover{
+	background-color:#a4c5d2 ;
+}
+
+/* Body of the Page*/
+#Content{
+	text-align: center;
+}
+#Showcase h2{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 2em;
+}
+hr{
+	border: 1px dotted #666;
+}
+.Sections{
+	width: 98%;
+	margin: 0 auto;
+}
+.text-section{
+	text-align: left;
+	margin-left: 25px;
+}
+#about-me{
+
+}
+.field{
+	padding: 2px;
+	background-color: #a4c5d2;
+}
+
+
+#Projects{
+
+}
+
