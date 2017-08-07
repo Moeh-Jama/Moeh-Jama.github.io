@@ -1,0 +1,191 @@
+
+#About_Me{
+	border: 1px dotted blue;
+	text-align: center;
+	/*background-color: rgba(7,5,9,0.5);*/
+}
+
+
+/*		Page Contents held Here 	*/
+#Content_Of_Page{
+
+}
+
+/*			Image with Text 		*/
+	
+#Col-A{
+	width: 69%;
+	float:left;
+	/*background-image: url('Images/BFEI.jpg ');*/
+}
+/*.Col-A img{
+	width: 98%;
+}*/
+#imgd{
+	position: relative;
+}
+@media screen and (max-width:750px){
+	.TextHov{
+		display: hidden;
+	}
+}
+
+/*			Educational Information	*/
+#Col-B{
+	border: 1px solid red;
+	float:left;
+	width: 30%;
+}
+#Enroll{
+	width: 75%;
+	padding: 5px;
+	margin: 0 auto;
+	text-align: center;
+	background: blue;
+}
+#click:link, #click:visited{
+	text-decoration: none;
+	color: #fff;;
+}
+#Enroll:hover{
+	background-color:orange;
+	color: #fff;
+}
+/*		Projects	*/
+
+#Projects{
+	width: 100%;
+	border: 1px dotted orange;
+	transition: 8s;
+}
+.field{
+	padding: 2px;
+	background-color: #a4c5d2;
+}
+
+
+
+
+/*			PROJECTS STYLING 	*/
+.proj-labels{
+	font-size: 1.5em;
+	text-align: center;
+	width: 100%;
+}
+.proj-labels:hover{
+	cursor:pointer;
+}
+.proj-content{
+	/* nothing so far needed */
+}
+
+
+#jamastry{
+	transition: 2s;
+	opacity: 0;
+}
+
+#CrossFire{
+	transition: 2s;
+	opacity: 0;
+
+}
+
+
+
+
+/*			CONTACT ME 			*/
+#Contact_Me{
+	width: 100%;
+	margin: 0 auto;
+}
+#FormSub{
+	width: 100%;
+	text-align: center;#font-size: 1.5em;
+}
+
+.names{
+	width: 85%;
+	margin: 0 auto;
+	
+}
+.input_names{
+	width: 65%;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+}
+.input_names:hover{
+	border: 1px solid lightblue;
+	transition: 0.3s;
+}
+#Enter_Message{
+	width: 66%;
+	max-width: 100%;
+	padding-bottom: 90px;
+
+	border-radius: 5px;
+}
+#Enter_Message:hover{
+	border: 1px solid lightblue;
+	transition: 0.3s;
+}
+#submit_button{
+	border-style: none;
+	padding: 7px;
+	width: 15%;
+	background-color: #dce5f7;
+}
+#submit_button:hover{
+	background-color: orange;
+	cursor:pointer;
+}
+#Form_content{
+	border: 1px solid black;
+	padding: 5px;
+}
+#CM{
+	background-color:#00004D;
+	color: #fff;
+	padding: 15px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+
+#contact-socials{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.total_link{
+
+}
+.total_link:hover{
+	background-color: lightgray;
+	cursor: pointer;
+	
+}
+
+
+
+#contact-socials p{
+	width: 25%;
+	margin: 0 auto;
+	padding: 5px 0px;
+}
+.insert_space{
+	float: right;
+}
+
+.social_links img{
+	-webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+    filter: sepia(100%);
+}
+.social_links:hover{
+	cursor: pointer;
+	transition: 0.5s;
+}
+.social_links:hover img{
+
+}

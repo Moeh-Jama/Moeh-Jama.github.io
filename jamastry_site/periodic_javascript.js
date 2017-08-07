@@ -1,19 +1,6 @@
-//var periodic_table = document.getElementById("periodic_table");
-//var btn = document.getElementById("btn");
-//var background = document.getElementById("hover_down");
-
-//var total_data;
-/*btn.addEventListener("click", function(){
-	var ourRequest = new XMLHttpRequest();
-	ourRequest.open('GET', 'https://moeh-jama.github.io/periodic_table.json');
-
-	ourRequest.onload = function(){
-		var ourData = JSON.parse(ourRequest.responseText);
-		total_data = ourData;
-		SetElement(ourData);
-	};
-	ourRequest.send();
-});*/
+/*
+	Creates the Periodic table
+*/
 
 function begin_script(){
 	var ourRequest = new XMLHttpRequest();
@@ -31,14 +18,7 @@ function SetElement(data){
 	var periodic_table = document.getElementById("periodic_table");
 	setBox = "<div id='periodic_elements'>";
 	var getter = data;
-	/*for(var i=0; i<data.length; i++)
-	{
-		setBox +="<div class='Box'>";
-		setBox +="<p>"+data[i].Atomic_Number+"</p>";
-		setBox +="<h1>"+data[i].Symbol+"</h1>";
-		setBox +="<p>"+data[i].Atomic_Weight+"g/mol<subscript>-1</subscript></p>";
-		setBox +="</div>";
-	}*/
+
 
 	setBox += "</div>";
 	//periodic_table.insertAdjacentHTML('beforeend', setBox);
@@ -208,7 +188,9 @@ function GetFormula(index)
 	writer+="<br>There are "+total_data[index].Atomic_Number+" proton(s) present in the element.";
 	writer+="</p></div>";
 	writer +="</div>";
-	background.insertAdjacentHTML('beforeend', writer);
+	//console.log(writer);
+	document.getElementById("return-periodic-query").innerHTML= writer;
+	//background.insertAdjacentHTML('beforeend', writer);
 }
 function Cancel_All(){
 	window.location.reload();

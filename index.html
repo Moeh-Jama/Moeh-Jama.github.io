@@ -1,42 +1,141 @@
 <!doctype html>
+
 <html>
 	<head>
-		<title>Moeh-Mohamed Jama</title>
+		<title>Mohamed Jama</title>
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/About_me.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<script type="text/javascript" src="clicker.js"></script>
+		<script>
+			$(document).ready(function(){
+				//go_contacts
+				// fade in #back-top
+				$(function () {
+
+					$('#go_contacts .go').click(function () {
+						$('body,html').animate({
+							scrollTop: $("#Contact_Me").offset().top
+						}, 800);
+						return false;
+					});
+
+					// scroll body to 0px on click
+					$('#go_projects .go').click(function () {
+						$('body,html').animate({
+							scrollTop: $("#Projects").offset().top
+						}, 800);
+						return false;
+					});
+
+					
+				});
+
+			});
+		</script>
 	</head>
 	<body>
-		<div id="MainContent">
-			<div id="Header">
-				<nav class="navbar-nav">
+		<div class="MainContainer">
+			<header>
+				<nav>
 					<ul>
-						<li><a class="links" href="#">Home</a></li>
-						<li><a class="links" href="jamastry_site/index.html">Jamastry</a></li>
-						<li><a class="links" href="#">Contact</a></li>
+						<li><a id= "selected" href="index.html">Home</a></li>
+						<li id="go_projects"><a class="go" href="#Projects">Projects</a></li>
+						<li id="go_resumes"><a class="go" href="#">Resume</a></li>
+						<li id="go_contacts"><a class="go" href="#Contact_Me">Contact Me</a></li>
 					</ul>
 				</nav>
+			</header>
+			<div class="Title">
+				<div id="Message">
+					<h1 id="TitleName">MOHAMED JAMA</h1>
+					<p id="TitleDes">Student/Computer Science/University College Dublin</p>
+				</div>
+				
 			</div>
-			<div id="Content">
-				<div id="Showcase">
-					<h2>Mohamed Jama</h2>
+			
+			<div id="Content_Of_Page">
+				<div id="Col-A">
+					<!--div id="imgd">
+						<img src="Images/BFEI.jpg">
+						<h1 class="TextHov">Blackrock Further Educations Institute</h1>
+					</div-->
+					<div id="About_Me">
+					<article>
+						<h1>About Me!</h1>
+						<p>I graduated from Blackrock Further Educations Institute in 2016 with full 8 Distinctions on all my modules. I started Computer Science at the University College Dublin in September 2016.<br>A determined and energetic individual who has developed a goal oriented mind-set and responsible approach to taking on challenges and tasks that are presented to me. Currently an undergraduate of computer at the University College Dublin, where my workflow and time management skills are tested continuously developed every day.</p>
+					</article>
 				</div>
-				<div id="about-me" class="Sections">
-					<h3 class="field">About Me</h3>
-					<p class="text-section">I graduated from Blackrock Further Educations Institute in 2016 with full 8 Distinctions on all my modules. I started Computer Science at the University College Dublin in September 2016.</p>
-				</div>
-				<div id="Projects" class="Sections">
-					<h3 class="field">My Projects</h3>
-					<h4>CrossFire</h4>
+				<?php
+				echo "My first PHP script!";
+				?>
 
-					<p class="text-section">This was a game developed for my Software Engineering class where me and a partner developed in C.<span class="Indent-Here">the game is based on a rpg table top sort of way. The main goal of the game is to be the last surviving player out of max 6 players.</p>
-					<hr>
-					<h4><a href="jamastry_site/index.html">Stoichiometry Chemistry Application </a></h4>
-					<img src="Images/sca.png" alt="An Image of an App called Stoichiometry Chemistry Application" width = 500>
-					<p class="text-section">This is an application I created during the summer of 2017. It is a JavaScript based chemistry calculator. [EXPLAIN]</p>
+				</div>	
+				<!--		Educational INFORMATION		-->
+				<div id="Col-B">
+					<article>
+						<h1>INFORMATION</h1>
+						<h3>2016/2020</h3>
+						<p>Course Name: Computer Science<br>
+							Institution: University College Dublin</p>
+						<h3>2015/2016</h3>
+						<p>Course Name: Software Development;<br>
+							QQI Level: 5;<br>
+							Modules: 8;<br>
+						</p>
+						<h3 id="Enroll"><a id="click" href="http://www.bfei.ie/courses/computer-science">Enroll Today!</a></h3>
+					</article>
+				</div>
+				<div id="Fill">
+				<p>WTF</p>
 				</div>
 			</div>
-			<footer class="Sections">
-			<p>Copright Mohamed Jama 2017 &copy;</p>
+			<div id="Projects">
+					<h3 class="field">My Projects</h3>
+					<p class="proj-labels" onclick="Project_Display_Settings('CrossFire')">CrossFire</p>
+					<div id="CrossFire" class="proj-content"></div><hr>
+					<p class="proj-labels" onclick="Project_Display_Settings('jamastry')">Jamastry</p>
+					<div id="jamastry" class="proj-content"></div>
+					<!--img src="Images/jamastry.png" alt="An Image of an App called Stoichiometry Chemistry Application" width = 500-->
+				</div>
+			<div id="Contact_Me">
+				<form id="FormSub" class="inline-blocks" action="MAILTO:thenexize@gmail.com" method=POST encotype="text/plain">
+					<h3 id="CM">Contact Me</h3>
+					<div id="Form_content">
+						<div class="names">				
+							<input type="text" class="input_names" name="Firstname" placeholder="Name">
+						</div>
+						<br>
+						<div class="names">
+							<input type=email class="input_names" name="Email" required placeholder="Email">
+						</div>
+						<br>
+						<div class="names">
+							<textarea  name="comment" id="Enter_Message" form="FormSub" placeholder="Message" required></textarea>
+						</div>
+						<br>
+						<input id="submit_button" type="submit" name="Submit">
+					</fieldset>
+				</form>
+				<hr>
+				<div id="contact-socials">
+					<div class="total_link" id="facebook" onclick="GotToPage('facebook')">
+						<p class="social_links">Facebook<span class="insert_space"><img src="btr_images/fb.png" alt="Linkedin logo" width=15></span></p>
+					</div>
+					<div class="total_link" id="linkedin" onclick="GotToPage('linkedin')">
+						<p class="social_links">Linkedin<span class="insert_space"><img src="btr_images/ln.png" alt="Linkedin logo" width=15></span></p>
+					</div>
+					<div class="total_link" id="github" onclick="GotToPage('github')">
+						<p class="social_links">Github<span class="insert_space"><img src="btr_images/gh.png" alt="Linkedin logo" width=15></span></p>
+					</div>
+				</div>
+				<div id="Curriculm Vitae">
+					<p><a href="MohamedJama.pdf">Download link to resume</a></p>
+				</div>
+			</div>
+			<footer>
+				<p> Copyright Mohamed Jama &copy; </p>
 			</footer>
-		</div>
+		</div>	
 	</body>
 </html>
