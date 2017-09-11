@@ -1,62 +1,46 @@
 
-#About_Me{
-	border: 1px dotted blue;
-	text-align: center;
-	/*background-color: rgba(7,5,9,0.5);*/
-}
-
 
 /*		Page Contents held Here 	*/
 #Content_Of_Page{
-
-}
-
-/*			Image with Text 		*/
-	
-#Col-A{
-	width: 69%;
-	float:left;
-	/*background-image: url('Images/BFEI.jpg ');*/
-}
-/*.Col-A img{
-	width: 98%;
-}*/
-#imgd{
-	position: relative;
-}
-@media screen and (max-width:750px){
-	.TextHov{
-		display: hidden;
-	}
-}
-
-/*			Educational Information	*/
-#Col-B{
-	border: 1px solid red;
-	float:left;
-	width: 30%;
-}
-#Enroll{
-	width: 75%;
 	padding: 5px;
-	margin: 0 auto;
+}
+.About_Me{
 	text-align: center;
-	background: blue;
+	font-size: 1em;
+	/*background-color: rgba(7,5,9,0.5);*/
 }
-#click:link, #click:visited{
-	text-decoration: none;
-	color: #fff;;
+.About_Me article h1, h2{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+
 }
-#Enroll:hover{
-	background-color:orange;
-	color: #fff;
+.About_Me article p{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	/*text-align: right;*/
+}
+
+.leftSide{
+	text-align: left;
+	padding: 15px;
+}
+.rightSide{
+	
 }
 /*		Projects	*/
 
 #Projects{
 	width: 100%;
-	border: 1px dotted orange;
 	transition: 8s;
+	text-align: center;
 }
 .field{
 	padding: 2px;
@@ -83,6 +67,10 @@
 #jamastry{
 	transition: 2s;
 	opacity: 0;
+}
+#jamastry img{
+	border: 5px solid black;
+
 }
 
 #CrossFire{
@@ -164,7 +152,7 @@
 .total_link:hover{
 	background-color: lightgray;
 	cursor: pointer;
-	
+
 }
 
 
@@ -188,4 +176,16 @@
 }
 .social_links:hover img{
 
+}
+
+#myPDF{
+	padding: 5px;
+	background-color:#00004D;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 2px;
+}
+#myPDF:hover{
+	background-color: #a4c5d2;
+	color: #00004D;
 }

@@ -41,6 +41,9 @@
 }
 /* Form result */
 #submition-report{
-	padding: 5px;
+	padding: 25px;
 	border: 1px solid black;
+}
+#result_table{
+	margin: 0 auto;
 }

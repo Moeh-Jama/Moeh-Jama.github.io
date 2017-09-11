@@ -36,6 +36,7 @@
 	</head>
 	<body>
 		<div class="MainContainer">
+			<div id="Contain_Head">
 			<header>
 				<nav>
 					<ul>
@@ -46,49 +47,41 @@
 					</ul>
 				</nav>
 			</header>
+			</div>
 			<div class="Title">
 				<div id="Message">
 					<h1 id="TitleName">MOHAMED JAMA</h1>
-					<p id="TitleDes">Student/Computer Science/University College Dublin</p>
+					<!--p id="TitleDes">Student/Computer Science/University College Dublin</p-->
 				</div>
 				
 			</div>
 			
 			<div id="Content_Of_Page">
 				<div id="Col-A">
-					<!--div id="imgd">
-						<img src="Images/BFEI.jpg">
-						<h1 class="TextHov">Blackrock Further Educations Institute</h1>
-					</div-->
-					<div id="About_Me">
+					<div class="About_Me">
 					<article>
 						<h1>About Me!</h1>
-						<p>I graduated from Blackrock Further Educations Institute in 2016 with full 8 Distinctions on all my modules. I started Computer Science at the University College Dublin in September 2016.<br>A determined and energetic individual who has developed a goal oriented mind-set and responsible approach to taking on challenges and tasks that are presented to me. Currently an undergraduate of computer at the University College Dublin, where my workflow and time management skills are tested continuously developed every day.</p>
-					</article>
-				</div>
-				<?php
-				echo "My first PHP script!";
-				?>
-
-				</div>	
-				<!--		Educational INFORMATION		-->
-				<div id="Col-B">
-					<article>
-						<h1>INFORMATION</h1>
-						<h3>2016/2020</h3>
-						<p>Course Name: Computer Science<br>
-							Institution: University College Dublin</p>
-						<h3>2015/2016</h3>
-						<p>Course Name: Software Development;<br>
-							QQI Level: 5;<br>
-							Modules: 8;<br>
+						<p class="rightSide">I graduated from BFEI in 2016 with a Certificate of Distinction for Software 
+						Development. With my results I got into the Computer Science course of University
+						College Dublin, graduating in 2020.<br>
 						</p>
-						<h3 id="Enroll"><a id="click" href="http://www.bfei.ie/courses/computer-science">Enroll Today!</a></h3>
+						<h2>Programming Languages</h2>
+						<p class="rightSide">
+						During BFEI I learned HTML, CSS, JavaScript and JAVA.<br>
+						During my first year of UCD I learned C, C++, PHP and increased my abilities in 
+						JavaScript.<br>
+						I have also being using python in building many mini projects with it, as evident in my 
+						GitHub profile.
+						</p>
 					</article>
 				</div>
-				<div id="Fill">
-				<p>WTF</p>
+				<div class="About_Me">
+					<h2>Education</h2>
+					<p>University College Dublin (2016-2020)<br>BSc Computer Science</p>
+					<p>Blackrock Further Education Institute (2015-2016)<br>QQI Certificate in
+					Software Development.</p>
 				</div>
+				</div>	
 			</div>
 			<div id="Projects">
 					<h3 class="field">My Projects</h3>
@@ -96,7 +89,6 @@
 					<div id="CrossFire" class="proj-content"></div><hr>
 					<p class="proj-labels" onclick="Project_Display_Settings('jamastry')">Jamastry</p>
 					<div id="jamastry" class="proj-content"></div>
-					<!--img src="Images/jamastry.png" alt="An Image of an App called Stoichiometry Chemistry Application" width = 500-->
 				</div>
 			<div id="Contact_Me">
 				<form id="FormSub" class="inline-blocks" action="MAILTO:thenexize@gmail.com" method=POST encotype="text/plain">
@@ -130,7 +122,7 @@
 					</div>
 				</div>
 				<div id="Curriculm Vitae">
-					<p><a href="MohamedJama.pdf">Download link to resume</a></p>
+					<p><a id="myPDF" href="MohamedJama.pdf">My Curriculum-Vitae</a></p>
 				</div>
 			</div>
 			<footer>

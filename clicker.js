@@ -13,7 +13,9 @@ function Project_Display_Settings(identifier){
 		else if(identifier == "jamastry")
 		{
 			//alert("YEP");
-			writer +="<p class='text-section'>This is an application I created during";
+			writer += "<img src='Images/jamastry.png' alt='An Image of an App called Jamastry' width = 500>";
+			writer +="<p class='text-section'>";
+			writer +="This is an application I created during";
 			writer +=" the summer of 2017. It is a JavaScript based chemistry calculator. [EXPLAIN]<br>";
 			writer += "<a href='jamastry_site/index.html'>Check The App Out</p>";
 		}

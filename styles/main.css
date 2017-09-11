@@ -6,6 +6,7 @@ body{
 	width: 95%;
 	max-width: 1025PX;
 	min-width: 1024px;
+	border: 1px solid black;
 }
 .Title{
 
@@ -153,3 +154,4 @@ footer p{
 .back-Top{
 	position: absolute;
 }
+
