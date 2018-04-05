@@ -5,22 +5,24 @@
 
 <div ng-app="myApp" ng-controller="myCtrl"> 
 
-<p>Data : {{content}}</p>
-<p>Status : {{statuscode}}</p>
-<p>StatusText : {{statustext}}</p>
+<p>Today's welcome message is:</p>
+
+<h1>{{myWelcome}}</h1>
 
 </div>
 
-<p>The response object has many properties. This example demonstrate the value of the data, status, and statusText properties.</p>
+<p>The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.</p>
 
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
-  $http.get("welcome.htm")
-  .then(function(response) {
-      $scope.content = response.data;
-      $scope.statuscode = response.status;
-      $scope.statustext = response.statusText;            
+  $http({
+    method : "GET",
+    url : "welcome.htm"
+  }).then(function mySuccess(response) {
+      $scope.myWelcome = response.data;
+    }, function myError(response) {
+      $scope.myWelcome = response.statusText;
   });
 });
 </script>
