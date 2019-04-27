@@ -1,11 +1,10 @@
 <!doctype html>
 
 <html>
-	<head>
-		<title>Mohamed Jama</title>
-		<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<head><title>Mohamed Jama</title>
+		
 		<link rel="stylesheet" type="text/css" href="styles/About_me.css">
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		
 		<script type="text/javascript" src="clicker.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -32,87 +31,18 @@
 				});
 
 			});
-		</script>
-	</head>
+		</script></head>
 	<body>
-		<div class="MainContainer">
-			<div id="Contain_Head">
-			<header>
-				<nav>
-					<ul>
-						<li><a id= "selected" href="index.html">Home</a></li>
-						<li id="go_projects"><a class="go" href="#Projects">Projects</a></li>
-						<li id="go_resumes"><a class="go" href="#">Resume</a></li>
-						<li id="go_contacts"><a class="go" href="#Contact_Me">Contact Me</a></li>
-					</ul>
-				</nav>
-			</header>
-			</div>
-			<div class="Title">
-				<div id="Message">
-					<h1 id="TitleName">MOHAMED JAMA</h1>
-					<!--p id="TitleDes">Student/Computer Science/University College Dublin</p-->
-				</div>
-				
-			</div>
-			
-			<div id="Content_Of_Page">
-				<div id="Col-A">
-					<div class="About_Me">
-					<article>
-						<h1>About Me!</h1>
-						<p class="rightSide">I graduated from BFEI in 2016 with a Certificate of Distinction for Software 
-						Development. With my results I got into the Computer Science course of University
-						College Dublin, graduating in 2020.<br>
-						</p>
-						<h2>Programming Languages</h2>
-						<p class="rightSide">
-						During BFEI I learned HTML, CSS, JavaScript and JAVA.<br>
-						During my first year of UCD I learned C, C++, PHP and increased my abilities in 
-						JavaScript.<br>
-						I have also being using python in building many mini projects with it, as evident in my 
-						GitHub profile.
-						</p>
-					</article>
-				</div>
-				<div class="About_Me">
-					<h2>Education</h2>
-					<p>University College Dublin (2016-2020)<br>BSc Computer Science</p>
-					<p>Blackrock Further Education Institute (2015-2016)<br>QQI Certificate in
-					Software Development.</p>
-				</div>
-				</div>	
-			</div>
-			<div id="Projects">
-					<h3 class="field">My Projects</h3>
-					<p class="proj-labels" onclick="Project_Display_Settings('CrossFire')">CrossFire</p>
-					<div id="CrossFire" class="proj-content"></div><hr>
-					<p class="proj-labels" onclick="Project_Display_Settings('jamastry')">Jamastry</p>
-					<div id="jamastry" class="proj-content"></div><hr>
-					<a href='flesch_application/index.html'><p class="proj-labels" onclick="">Flesch_Kincaid</p></a>
-					<div id="Flesch_Kincaid" class="proj-content"></div>
-				</div>
-			<div id="Contact_Me">
-				<form id="FormSub" class="inline-blocks" action="MAILTO:thenexize@gmail.com" method=POST encotype="text/plain">
-					<h3 id="CM">Contact Me</h3>
-					<div id="Form_content">
-						<div class="names">				
-							<input type="text" class="input_names" name="Firstname" placeholder="Name">
-						</div>
-						<br>
-						<div class="names">
-							<input type=email class="input_names" name="Email" required placeholder="Email">
-						</div>
-						<br>
-						<div class="names">
-							<textarea  name="comment" id="Enter_Message" form="FormSub" placeholder="Message" required></textarea>
-						</div>
-						<br>
-						<input id="submit_button" type="submit" name="Submit">
-					</fieldset>
-				</form>
-				<hr>
-				<div id="contact-socials">
+		<h1>Mohamed Jama</h1>
+		<h5>3rd year CS undergraduate @ UCD</h5>
+		<h3>Code</h3>
+		<ul style="color: black;">
+			<li><a href='jamastry_site/index.html'>interactive Periodic Table</a></li>
+			<li><a href='flesch_application/index.html'>Flesch Application</a></li>
+			<li><a href='gpa/index.html'>GPA Calculator</a></li>
+		</ul>
+
+		<div id="contact-socials">
 					<div class="total_link" id="facebook" onclick="GotToPage('facebook')">
 						<p class="social_links">Facebook<span class="insert_space"><img src="btr_images/fb.png" alt="Linkedin logo" width=15></span></p>
 					</div>
@@ -123,13 +53,5 @@
 						<p class="social_links">Github<span class="insert_space"><img src="btr_images/gh.png" alt="Linkedin logo" width=15></span></p>
 					</div>
 				</div>
-				<div id="Curriculm Vitae">
-					<p><a id="myPDF" href="MohamedJama.pdf">My Curriculum-Vitae</a></p>
-				</div>
-			</div>
-			<footer>
-				<p> Copyright Mohamed Jama &copy; </p>
-			</footer>
-		</div>	
-	</body>
+	</body>	
 </html>
