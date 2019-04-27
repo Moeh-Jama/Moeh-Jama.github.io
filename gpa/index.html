@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<form>
+		<h1>Calculating your Disastor</h1>
+
+		<p>When inputting your results keep it in the form of Grade #, where
+		the # being number of times you got that grade.</p>
+		<p>An example can be seen below:<br> A+ 1, B- 3, D 1<br>As you can you need a comma after each grade input.</p> 
+		<input type="text", class='HellWorld' size="100">
+		</form>
+		<button onclick="myFunction()">Try it</button>
+		<div class="Result"></div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script>
+		function myFunction() {
+		  var y = document.getElementsByClassName("HellWorld");
+		  var grades = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E", "F", "G", "NG"];
+		  var values = ["4.2", "4.0", "3.8", "3.6", "3.4", "3.2", "3.0", "2.8", "2.6", "2.4", "2.2", "2.0", "1.6", "1.0", "0.4", "0.0"];
+		  var ending = false;
+		  var total = y[0].value.split(",");
+
+		  var calc_weight = 0;
+		  var total_grades = 0;
+		  for(var i=0; i<total.length; i++){
+		  		var num = total[i][total[i].length
+		  		-1];
+		  		if(num.charCodeAt(0) == 32 || (num.charCodeAt(0) <48 || num.charCodeAt(0)>57)){
+		  			total[i][total[i].length-1] = "1";
+		  			num = "1";
+		  		}
+		  		var str = total[i].replace(/\s/g,'');  
+		  		str = str.substring(0, str.length-1).toUpperCase();
+		  		var grade_value_index = grades.indexOf(str);
+		  		var grade_value = parseFloat(values[grade_value_index]);
+		  		
+		  		total_grades += parseFloat(num);
+		  		calc_weight += (grade_value*5)*parseFloat(num);
+		  }
+		  
+
+		  var output = calc_weight/(total_grades*5)
+		  var message = "Your Grade outlook is: ";
+		  document.getElementsByClassName("Result")[0].innerHTML = message+output+" GPA";
+		}
+		</script>
+
+	</body>
+</html>
