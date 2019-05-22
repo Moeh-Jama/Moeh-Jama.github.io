@@ -1,12 +1,13 @@
 #mainWrapper{
-    background-image: url("../images/eberhard-grossgasteiger-338314-unsplash.jpg");
+    /*background-image: url("../images/eberhard-grossgasteiger-338314-unsplash.jpg");*/
    /* background-color: lightblue;*/
-   color: white;
-
+   /*color: white;*/
+   color:black;
    text-align: center;
 }
 #mainWrapper, a{
-    color: white;
+    /*color: white;*/
+    color:black;
 }
 
 #description{
