@@ -1,0 +1,53 @@
+#mainWrapper{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+#about{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
+.grades{
+    width: 85%;
+    margin-left:7.5%;
+}
+
+#submit{
+    margin: auto;
+    text-align: center;
+    margin-left: 40%;
+    
+    border: none;
+    color: white;
+    height: 42px;
+    background-color: #008CBA;
+}
+#submit:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+#helpfulContentBlock{
+    width: 85%;
+    margin: auto;
+    padding: 5%;
+    height: 350px;
+}
+
+#GradeLetterToGPA{
+    width: 29%;
+    float: left;
+}
+
+#moreInformation{
+    width: 69%;
+    margin-left: 35%;   /* should be 29% for exact halving */
+}
+
+a{
+    text-decoration-line:none;
+    color: cornflowerblue;  
+}

@@ -1,0 +1,14 @@
+#mainWrapper{
+    background-image: url("../images/eberhard-grossgasteiger-338314-unsplash.jpg");
+   /* background-color: lightblue;*/
+   color: white;
+
+   text-align: center;
+}
+#mainWrapper, a{
+    color: white;
+}
+
+#description{
+    font-size: 15pt;
+}
