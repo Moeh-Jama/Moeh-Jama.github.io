@@ -12,7 +12,7 @@ body{
 
 	/*background-image: url('../Images/space.jpg');*/
 	/*height: 400px;*/
-	color: #ffffff;
+	/*color: #ffffff;*/
 	padding-bottom: 90px;
 	text-align: center;
 }
@@ -37,7 +37,7 @@ body{
 	left: 0; 
 	width:50%;
 	margin-left: 15px;
-	color: #fff;
+	/*color: #fff;*/
 	background:rgba(0,0,0,0.7);
 }
 
@@ -59,7 +59,7 @@ ul li{
 	padding: 7.25px;
 }
 ul li a:link, ul li a:visited {
-	color: #fff;
+	/*color: #fff;*/
 	text-decoration: none;
 }
 ul li a:hover, ul li a:active{
@@ -89,7 +89,7 @@ ul li a:hover, ul li a:active{
 }
 .Column-Header{
 	background-color: #00004D;
-	color: #fff;
+	/*color: #fff;*/
 	text-align: center;
 	padding: 5px;
 }
@@ -123,7 +123,7 @@ ul li a:hover, ul li a:active{
 }
 footer{
 	background-color: #00004D;
-	color: #fff;
+	/*color: #fff;*/
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
