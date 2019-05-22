@@ -3,55 +3,21 @@
 <html>
 	<head><title>Mohamed Jama</title>
 		
-		<link rel="stylesheet" type="text/css" href="styles/About_me.css">
-		
-		<script type="text/javascript" src="clicker.js"></script>
-		<script>
-			$(document).ready(function(){
-				//go_contacts
-				// fade in #back-top
-				$(function () {
-
-					$('#go_contacts .go').click(function () {
-						$('body,html').animate({
-							scrollTop: $("#Contact_Me").offset().top
-						}, 800);
-						return false;
-					});
-
-					// scroll body to 0px on click
-					$('#go_projects .go').click(function () {
-						$('body,html').animate({
-							scrollTop: $("#Projects").offset().top
-						}, 800);
-						return false;
-					});
-
-					
-				});
-
-			});
-		</script></head>
+		<!--link rel="stylesheet" type="text/css" href="styles/About_me.css"-->
+		<link rel="stylesheet" type="text/css" href="styles/main_index.css">
+		</head>
 	<body>
-		<h1>Mohamed Jama</h1>
-		<h5>3rd year CS undergraduate @ UCD</h5>
-		<h3>Code</h3>
-		<ul style="color: black;">
-			<li><a href='jamastry_site/index.html'>interactive Periodic Table</a></li>
-			<li><a href='flesch_application/index.html'>Flesch Application</a></li>
-			<li><a href='gpa/index.html'>GPA Calculator</a></li>
-		</ul>
-
-		<div id="contact-socials">
-					<div class="total_link" id="facebook" onclick="GotToPage('facebook')">
-						<p class="social_links">Facebook<span class="insert_space"><img src="btr_images/fb.png" alt="Linkedin logo" width=15></span></p>
-					</div>
-					<div class="total_link" id="linkedin" onclick="GotToPage('linkedin')">
-						<p class="social_links">Linkedin<span class="insert_space"><img src="btr_images/ln.png" alt="Linkedin logo" width=15></span></p>
-					</div>
-					<div class="total_link" id="github" onclick="GotToPage('github')">
-						<p class="social_links">Github<span class="insert_space"><img src="btr_images/gh.png" alt="Linkedin logo" width=15></span></p>
-					</div>
-				</div>
+		<div id="mainWrapper">
+			<h1>Mohamed Jama</h1>
+			<div id="description">
+				<h5>3rd year CS undergraduate @ UCD</h5>
+			</div>
+			<h3>Code</h3>
+			<ul>
+				<li><a href='apps/jamastry_site/index.html'>interactive Periodic Table</a></li>
+				<li><a href='apps/flesch_application/index.html'>Flesch Application</a></li>
+				<li><a href='apps/gpa/index.html'>GPA Calculator</a></li>
+			</ul>
+		</div>
 	</body>	
 </html>
