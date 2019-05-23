@@ -1,15 +1,46 @@
 #mainWrapper{
-    /*background-image: url("../images/eberhard-grossgasteiger-338314-unsplash.jpg");*/
-   /* background-color: lightblue;*/
-   /*color: white;*/
    color:black;
-   text-align: center;
+   /* text-align: center; */
+   padding: 5px;
+   /* border: 1px dashed goldenrod; */
+   height: 600px;
 }
 #mainWrapper, a{
-    /*color: white;*/
     color:black;
+    width: 65%;
+    margin: auto;
+}
+#Header{
+    text-align: center;
+
+    color: white;
+    border: 1px dashed transparent;
+    background-color: cornflowerblue;
 }
 
 #description{
     font-size: 15pt;
+}
+
+
+
+#leftSide{
+    margin-top: 5px;
+    float:left;
+    width: 25%;
+    /* border: 1px dashed blue; */
+    /* justify-content: space-between; */
+}
+
+#rightSide{
+    margin-top: 5px;
+    margin-left: 26%;
+    /* border: 1px  dashed crimson; */
+    padding: 5px;
+}
+
+
+#aboutBlock{
+    margin-top: 5px;
+    /* border: 1px dashed sienna; */
 }
