@@ -10,7 +10,7 @@
     width: 65%;
     margin: auto;
 }
-#Header{
+#header{
     text-align: center;
 
     color: white;
@@ -18,11 +18,15 @@
     background-color: cornflowerblue;
 }
 
+#hero {
+    width: 75%;
+    margin: auto;
+    padding: 5px;
+}
+
 #description{
     font-size: 15pt;
 }
-
-
 
 #leftSide{
     margin-top: 5px;

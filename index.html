@@ -5,13 +5,18 @@
 		
 		<!--link rel="stylesheet" type="text/css" href="styles/About_me.css"-->
 		<link rel="stylesheet" type="text/css" href="styles/main_index.css">
+		<script src="./apps/conways_game_of_life/index.js"></script>
+		<link rel="stylesheet" type="text/css" href="./apps/conways_game_of_life/main.css">
 		</head>
-	<body>
+	<body onload="conwaysGameOfLife()">
 		<div id="mainWrapper">
-			<div id="Header">
-				<h3>Mohamed Jama</h3>
+				<div id="header">
+					<h3>Mohamed Jama</h3>
+				</div>
+			<div id="hero">
+    		<canvas id="canvas">Hello World</canvas>
 			</div>
-			<div id="leftSide">
+			<div id="leftSide" onload="">
 				<h3 style="text-align: center;">Web Projects</h3>
 				<ul>
 					<li><a href='apps/jamastry_site/index.html'>interactive Periodic Table</a></li>
@@ -19,19 +24,10 @@
 				</ul>
 			</div>
 			<div id="rightSide">
-				
+
 				<div id="aboutBlock">
-					<p>My name is Mohamed Jama, I am a 3rd year undergraduate at the University College Dublin studying
-						Computer Science.
-					</p>
-					<p>
-						In UCD I did college projects and coding assignments primarily in Java which has made it 
-						one of my strongest langauges. Along with Java I learned a bit of C++, C (all of first year), SQL,
-						Ruby, Scheme (list dialect) & R.<br><br>
-						I learned Python out of my own time during college breaks where I developed several projects using it 
-						such as Web Messaging App, Chemistry GUI App, Blogging  application and many more. 
-						<br><br>
-						Link to my CV : <a href="Mohamed_Jama.pdf">Curriculum Vitae	</a>
+					<p>Hey my name is Mohamed Jama, I currently work @ AWS as a Software Development Engineer.
+						I currently work in Ruby on Rails, and React and I've got some interests in AI.
 					</p>
 					<h5>Socials</h5>
 					<ul>
